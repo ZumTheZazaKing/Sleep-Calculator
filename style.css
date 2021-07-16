@@ -55,19 +55,37 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.container .results table p {
+  color: black;
+}
+.container .results table td {
+  width: 250px;
+  height: 125px;
+  font-size: 20px;
+}
+.container .results table .good {
+  color: green;
+}
+.container .results table .bad {
+  color: red;
+}
+.container .results table .desc {
+  font-size: 14px;
+}
 .container .results table, .container .results th, .container .results td {
   padding: 10px;
   border-collapse: collapse;
   border: 20px solid #dddddd;
-}
-.container .results td {
-  width: 200px;
-  height: 100px;
+  box-sizing: border-box;
 }
 
 .selected {
   background-color: #2d2de2 !important;
   color: white;
+}
+
+.hide {
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
