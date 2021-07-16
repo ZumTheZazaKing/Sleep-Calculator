@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+.container .selection {
+  text-align: center;
+}
+.container .selection .button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 20px;
+  background: transparent;
+  transition: 0.2s ease-in;
+}
+.container .selection .buttonCalc {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+}
+.container .selection input {
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+}
+.container .results {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.container .results p {
+  color: darkgrey;
+}
+.container .results table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .results table, .container .results th, .container .results td {
+  padding: 10px;
+  border-collapse: collapse;
+  border: 20px solid #dddddd;
+}
+.container .results td {
+  width: 200px;
+  height: 100px;
+}
+
+.selected {
+  background-color: #2d2de2 !important;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,104 @@
+$buttonFont:Helvetica, Arial, sans-serif;
+
+
+
+@mixin paddings ($size) {
+    padding: $size ($size*2);
+}
+
+@mixin displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin buttons{
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+body{
+    @include displayFlex();
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+    height: 100vh;
+}
+
+
+.container{
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    @include paddings(10px);
+    text-align: center;
+
+
+
+    .selection{
+
+        text-align: center;
+
+        .button{
+            @include paddings(10px);
+            @include buttons();
+            font-size: 20px;
+            background: transparent;
+            transition: .2s ease-in;
+        }
+    
+        .buttonCalc{
+            @include buttons();
+            @include paddings(10px);
+            width: 100%;
+        }
+    
+        input{
+            font-size: 24px;
+            font-family: $buttonFont;
+            cursor: pointer;
+            border: none;
+        }
+
+    }
+
+
+    .results{
+
+        text-align: center;
+        font-family: $buttonFont;
+
+        p{
+            color: darkgrey;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table,th,td{
+            padding: 10px;
+            border-collapse: collapse;
+            border: 20px solid rgb(221, 221, 221);
+        }
+
+        td{
+            width: 200px;
+            height: 100px;
+        }
+
+    }
+
+}
+
+
+.selected{
+    background-color: rgb(45, 45, 226) !important;
+    color: white;
+}
