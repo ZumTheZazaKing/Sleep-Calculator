@@ -1,3 +1,7 @@
+html, body {
+  overflow: hidden;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -6,6 +10,7 @@ body {
   padding: 0;
   background-color: burlywood;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
@@ -14,6 +19,9 @@ body {
   border-radius: 10px;
   padding: 10px 20px;
   text-align: center;
+}
+.container h1 {
+  font-family: Helvetica, Arial, sans-serif;
 }
 .container .selection {
   text-align: center;
@@ -45,15 +53,15 @@ body {
   border: none;
 }
 .container .results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
 }
 .container .results p {
   color: darkgrey;
-}
-.container .results table {
-  margin-left: auto;
-  margin-right: auto;
 }
 .container .results table p {
   color: black;
@@ -75,8 +83,15 @@ body {
 .container .results table, .container .results th, .container .results td {
   padding: 10px;
   border-collapse: collapse;
-  border: 20px solid #dddddd;
+  border: 3vw solid #dddddd;
   box-sizing: border-box;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 
 .selected {
@@ -86,6 +101,12 @@ body {
 
 .hide {
   display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
