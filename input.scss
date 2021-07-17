@@ -58,11 +58,7 @@ body{
             transition: .2s ease-in;
         }
     
-        .buttonCalc{
-            @include buttons();
-            @include paddings(10px);
-            width: 100%;
-        }
+        
     
         input{
             font-size: 24px;
@@ -71,6 +67,17 @@ body{
             border: none;
         }
 
+    }
+
+    .buttonCalc, .buttonReload{
+        @include buttons();
+        @include paddings(10px);
+        width: 100%;
+    }
+
+    .buttonReload{
+        background-color: rgb(53, 53, 247);
+        color: white;
     }
 
 

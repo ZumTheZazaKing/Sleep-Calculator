@@ -37,7 +37,13 @@ body {
   background: transparent;
   transition: 0.2s ease-in;
 }
-.container .selection .buttonCalc {
+.container .selection input {
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+}
+.container .buttonCalc, .container .buttonReload {
   border: none;
   outline: none;
   cursor: pointer;
@@ -46,11 +52,9 @@ body {
   padding: 10px 20px;
   width: 100%;
 }
-.container .selection input {
-  font-size: 24px;
-  font-family: Helvetica, Arial, sans-serif;
-  cursor: pointer;
-  border: none;
+.container .buttonReload {
+  background-color: #3535f7;
+  color: white;
 }
 .container .results {
   display: flex;
